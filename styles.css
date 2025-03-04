@@ -186,7 +186,7 @@ section h2::after {
 
 img {
   max-width: 300px;
-  height: auto;
+  max-height: 300px;
 }
 .projects-placeholder {
   text-align: center;
