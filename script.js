@@ -42,3 +42,43 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const sliderContainer = document.querySelector(".project-slider");
+  const slides = document.querySelectorAll(".project-card");
+  const prevButton = document.querySelector(".slider-prev");
+  const nextButton = document.querySelector(".slider-next");
+  const indicators = document.querySelectorAll(".slide-indicator");
+
+  let currentIndex = 0;
+
+  function updateSlider() {
+    // Hide all slides
+    slides.forEach((slide) => slide.classList.remove("active"));
+    indicators.forEach((indicator) => indicator.classList.remove("active"));
+
+    // Show current slide
+    slides[currentIndex].classList.add("active");
+    indicators[currentIndex].classList.add("active");
+
+    // Move the slider
+    sliderContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Next slide
+  nextButton.addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % slides.length; // Loop back to the first slide
+    updateSlider();
+  });
+
+  // Previous slide
+  prevButton.addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length; // Loop to the last slide
+    updateSlider();
+  });
+
+  // Initialize the slider
+  updateSlider();
+});
+
+// script.js

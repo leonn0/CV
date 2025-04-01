@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Leon Veseli - Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="script" href="script.js" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -85,17 +85,60 @@ Consistently met and exceeded monthly sales targets, demonstrating a results-dri
       <section id="projects">
         <h2>Projects</h2>
         <div class="projects-placeholder">
-          <div class="project-card">
-            <div class="project-icon">
-              <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z" fill="#050D42"></path><path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z" fill="#050D42"></path><path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z" fill="#050D42"></path><path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z" fill="#2F4BFF"></path></g></svg>
-            </div>
-            <div class="project-content">
-              <h3>Weather App</h3>
-              <p class="project-description">A simple weather application that uses an API to fetch and display current weather conditions for any city.</p>
-              <a href="https://leonn0.github.io/Weather/" target="_blank" class="project-link">View Weather App</a>
+          <div class="slider-container">
+            <div class="project-slider">
+              <!-- Project 1: Weather App (Original) -->
+              <div class="project-card">
+                <div class="project-icon">
+                  <svg width="64px" height="64px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M512 960c-92.8 0-160-200-160-448S419.2 64 512 64s160 200 160 448-67.2 448-160 448z m0-32c65.6 0 128-185.6 128-416S577.6 96 512 96s-128 185.6-128 416 62.4 416 128 416z" fill="#050D42"></path><path d="M124.8 736c-48-80 92.8-238.4 307.2-363.2S852.8 208 899.2 288 806.4 526.4 592 651.2 171.2 816 124.8 736z m27.2-16c33.6 57.6 225.6 17.6 424-97.6S905.6 361.6 872 304 646.4 286.4 448 401.6 118.4 662.4 152 720z" fill="#050D42"></path><path d="M899.2 736c-46.4 80-254.4 38.4-467.2-84.8S76.8 368 124.8 288s254.4-38.4 467.2 84.8S947.2 656 899.2 736z m-27.2-16c33.6-57.6-97.6-203.2-296-318.4S184 246.4 152 304 249.6 507.2 448 622.4s392 155.2 424 97.6z" fill="#050D42"></path><path d="M512 592c-44.8 0-80-35.2-80-80s35.2-80 80-80 80 35.2 80 80-35.2 80-80 80zM272 312c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48zM416 880c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z m448-432c-27.2 0-48-20.8-48-48s20.8-48 48-48 48 20.8 48 48-20.8 48-48 48z" fill="#2F4BFF"></path></g></svg>
+                </div>
+                <div class="project-content">
+                  <h3>Weather App</h3>
+                  <p class="project-description">A simple weather application that uses an API to fetch and display current weather conditions for any city.</p>
+                  <a href="https://leonn0.github.io/Weather/" target="_blank" class="project-link">View Weather App</a>
+                </div>
+              </div>
+              
+              <!-- Project 2: Number Guessing Game -->
+              <div class="project-card">
+                <div class="project-icon">
+                  <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M11 12.5L3 12.5M14 6.5H3M14 18.5H3" stroke="#2F4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 12L16 12.01M16 6L16 6.01M16 18L16 18.01" stroke="#2F4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="19.5" cy="12" r="2.5" stroke="#2F4BFF" stroke-width="1.5"></circle><circle cx="19.5" cy="6" r="2.5" stroke="#2F4BFF" stroke-width="1.5"></circle><circle cx="19.5" cy="18" r="2.5" stroke="#2F4BFF" stroke-width="1.5"></circle></g></svg>
+                </div>
+                <div class="project-content">
+                  <h3>Guess The Number Game</h3>
+                  <p class="project-description">A Java WebApplication built with Spring Boot where the javafile serves as an API and the js file fetches the information.</p>
+                  <a href="https://github.com/leonn0/guess-the-number" target="_blank" class="project-link">View Task Manager</a>
+                </div>
+              </div>
+              
+              <!-- Project 3: Java Server Client App -->
+              <div class="project-card">
+                <div class="project-icon">
+                  <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3 9H21M9 21V9M5.8 21H18.2C19.8802 21 20.7202 21 21.362 20.673C21.9265 20.3854 22.3854 19.9265 22.673 19.362C23 18.7202 23 17.8802 23 16.2V7.8C23 6.11984 23 5.27976 22.673 4.63803C22.3854 4.07354 21.9265 3.6146 21.362 3.32698C20.7202 3 19.8802 3 18.2 3H5.8C4.11984 3 3.27976 3 2.63803 3.32698C2.07354 3.6146 1.6146 4.07354 1.32698 4.63803C1 5.27976 1 6.11984 1 7.8V16.2C1 17.8802 1 18.7202 1.32698 19.362C1.6146 19.9265 2.07354 20.3854 2.63803 20.673C3.27976 21 4.11984 21 5.8 21Z" stroke="#2F4BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+                </div>
+                <div class="project-content">
+                  <h3>Java Server Client App</h3>
+                  <p class="project-description">A Server Client app Using Java where the Client connects to the Server in order to establish a comuncation.</p>
+                  <a href="https://github.com/leonn0/Server-client-messaging-using-JAVA" target="_blank" class="project-link">View Portfolio</a>
+                </div>
+              </div>
             </div>
           </div>
-          <p class="coming-soon">More projects coming soon...</p>
+          
+          <div class="slider-controls">
+            <button class="slider-btn slider-prev">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <button class="slider-btn slider-next">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+          </div>
+          
+          <div class="slider-indicators">
+            <div class="slide-indicator active"></div>
+            <div class="slide-indicator"></div>
+            <div class="slide-indicator"></div>
+          </div>
         </div>
       </section>
 
