@@ -87,6 +87,49 @@ nav ul li a:hover {
   border-bottom: 2px solid var(--primary-color);
 }
 
+.experience-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.experience-item em {
+  display: block;
+  color: var(--gray-color);
+  margin-bottom: 1rem;
+  font-style: normal;
+}
+
+.experience-item p {
+  color: var(--gray-color);
+  line-height: 1.8;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  color: var(--gray-color);
+}
+
+.experience-item li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
 section {
   padding: 4rem 0;
   margin: 2rem 0;
